@@ -1,0 +1,75 @@
+/* Add custom styles for the portfolio website */
+
+/* Smooth scrolling for the entire page */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Custom styling for section transitions */
+section {
+  transition: all 0.3s ease-in-out;
+}
+
+/* Custom styling for hover effects */
+.hover-scale {
+  transition: transform 0.3s ease;
+}
+
+.hover-scale:hover {
+  transform: scale(1.03);
+}
+
+/* Custom animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fadeIn {
+  animation: fadeIn 0.8s ease-out forwards;
+}
+
+/* Custom styling for mobile responsiveness */
+@media (max-width: 768px) {
+  .container {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+}
+
+/* Custom styling for dark mode (to be implemented) */
+.dark-mode {
+  background-color: #121212;
+  color: #f5f5f5;
+}
+
+/* Custom styling for buttons */
+button, .button {
+  transition: all 0.3s ease;
+}
+
+button:hover, .button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Custom styling for timeline elements */
+.timeline-item {
+  position: relative;
+}
+
+.timeline-item::before {
+  content: '';
+  position: absolute;
+  width: 2px;
+  background-color: #004c8c;
+  top: 0;
+  bottom: 0;
+  left: 0;
+}
